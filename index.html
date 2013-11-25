@@ -1,0 +1,44 @@
+<html>
+
+	<head>
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="typecoords.js"></script>
+
+		<style>
+
+			.container {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+
+				width: 600px;
+			}
+
+			p {
+				font-size: 3em;
+				font-family: arial;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<p class="sentence1">
+				The rain in spain falls mainly on the plains.
+			</p>
+			<p>
+				If you end up insane, you've practiced in vain.
+			</p>
+		</div>
+
+		<script>
+			console.log(typecoords.chop($(".sentence1")));
+		</script>
+
+	</body>
+
+</html>
