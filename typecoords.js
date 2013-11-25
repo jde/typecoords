@@ -20,7 +20,7 @@ var typecoords = (function () {
 			eCount++;
 		}
 
-		$e.html($wce.html());
+		return $e.html($wce.html());
 
 	};
 
@@ -34,20 +34,22 @@ var typecoords = (function () {
 			offset = [],
 			scroll = [];
 
+		console.log("es", es);
+
 		es.each(function (i, e) {
 
 			var pos = $(e).position();
-			pos.e = $e;
+			pos.e = $(e);
 			position.push(pos);
 
 			var off = $(e).offset();
-			off.e = $e;
+			off.e = $(e);
 			offset.push(off);
 
 			var scr = {
 				top: $e.scrollTop(),
 				left: $e.scrollLeft(),
-				e: $e
+				e: $(e)
 			};
 			scroll.push(scr);
 
