@@ -34,8 +34,6 @@ var typecoords = (function () {
 			offset = [],
 			scroll = [];
 
-		console.log("es", es);
-
 		es.each(function (i, e) {
 
 			var pos = $(e).position();
